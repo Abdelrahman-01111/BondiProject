@@ -1,0 +1,238 @@
+:root{
+  --darkpr:#3C096C;
+  --black:#090B0E;
+  --lightpr:#7B2CBF;
+  --white:white;
+}
+
+body {
+    font-family:'Cairo', sans-serif !important;
+    background: black;
+    
+}
+.bgdarkt{
+background: #3C096CA8;
+backdrop-filter:blur(20px);
+}
+.bglight{
+background: var(--lightpr);
+}
+.bgblack{
+background: var(--black)!important;
+}
+.bgwhite{
+background: var(--white);
+}
+.bggrey{
+  background:#12161D
+}
+/*button:focus{
+  box-shadow:  none !important;
+  /*border-color:var(--lightpr) !important;
+}*/
+a.navbar-brand{
+      font-family:'Cairo', sans-serif !important;
+}
+.nav-link{
+  color:#eee!important;
+}
+.carousel{
+  position: relative !important;
+  z-index: 1;
+  pointer-events: none
+}
+.carousel::before {
+  content: "";
+  width:100%;
+  height:100%;
+  background: black;
+  opacity: 40%;
+    position: absolute;
+  z-index:31;
+
+}
+.carousel .carousel-item{
+ height:calc(100vh - 64px);
+ overflow: hidden;
+ width:100vw;
+ 
+}
+.carousel .carousel-item img{
+  width:100%;
+  height:100%;
+ object-fit:cover!important;
+-o-object-fit: cover!important;
+}
+
+.carousel .info{
+  
+    position: absolute;
+    width:100%;
+    z-index: 50;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.carousel .klam{
+
+  
+ 
+  width:100%;
+  text-align: center;
+  background:#0000003D;
+  backdrop-filter: blur(20px);
+
+  padding:5px 0;
+  color:white;
+}
+
+.btn-abdy{
+ pointer-events: auto;
+  border:none;
+  background:white;
+  width:fit-content;
+  min-width:70px;
+  text-align: center;
+  padding:5px;
+  color:black;
+  font-weight: bold;
+  transition:.3s;
+ 
+  display:inline-block;
+  text-decoration: none;
+ 
+}
+nav .btn-abdy{
+  color:black!important;
+}
+.btn-abdy:hover{
+  background: var(--darkpr)!important;
+  color:white!important;
+}
+.main-h{
+  margin:10px auto 80px;
+  text-align: center ;
+  font-size: 2em;
+  position: relative;
+  width:fit-content;
+  z-index: 5;
+  color:white;
+}
+
+.main-h::after{
+  content: "";
+  width:110%;
+  height: 3px;
+  position: absolute;
+  
+  left:50%;
+  transform: translate(-50%,0) ;
+  bottom:-15px;
+  z-index: -1;
+  background-image: linear-gradient(to right,var(--darkpr),var(--lightpr))
+  
+
+}
+.main-h p{
+  color:#E9E9E991;
+  font-size:19px;
+}
+.features .col-md-6{
+  line-height: 2;
+  position: relative;
+  z-index: 1; 
+  padding:50px 0;
+}
+
+.features .col-md-6 h4{
+  color:var(--lightpr);
+  font-weight: bolder
+}
+.features .col-md-6 .opacity-50{
+  opacity: 20%!important;
+  font-size: 10rem;
+  color:var(--darkpr);
+  font-weight: bold;
+  top:-30px;
+  left:50%;
+  transform: translateX(-50%);
+ z-index: -1;
+}
+.gallery .photos .box,.people .box{
+    
+  position: relative;
+  overflow: hidden
+}
+.gallery .photos img {
+ height: 100%;
+ border:10px solid var(--black);
+ filter:saturate(1.2);
+}
+
+.gallery .photos .box::before{
+    content:attr(data-text);
+    width:93%;
+    height:0;
+    position: absolute;
+    bottom:0;
+    display: grid;
+    place-items:center;
+    background: #FFFFFF80;
+    backdrop-filter: blur(20px);
+    z-index:5;
+    overflow: hidden;
+    font-size: 1.7em;
+    transition: .3s;
+}
+.gallery .photos .box:hover::before{
+  height:100%;
+}
+
+.about img{
+  filter:hue-rotate(45deg);
+}
+.people img{
+  
+width:100%;
+  
+}
+.people .box .klam{
+box-sizing: border-box;
+  position: absolute;
+  bottom:0px;
+ width:calc(100% - 1.5rem);
+  background: #00000099;
+  backdrop-filter: blur(20px);
+  padding:15px;
+  line-height:.5;
+}
+
+.project .choose label,.project .choose label:hover{
+  color:var(--lightpr);
+  border:1px solid var(--lightpr);
+  border-radius: 0;
+  padding:20px 10px;
+  font-size:1.2em;
+  
+}
+.project .choose input:checked + label{
+  background-image: linear-gradient(to right ,var(--darkpr),var(--lightpr))!important;
+ color:white;
+}
+.project .choose .radios{
+  width:100%;
+  
+}
+.subscribe input:focus{
+  box-shadow:none;
+  border-color: var(--lightpr)
+}
+footer li{ padding:5px 0;}
+footer{
+  background-image: url("/imgs/walpy_1686675314214.png");
+  background-color: #111111;
+  background-blend-mode:overlay;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: bottom center;
+}
