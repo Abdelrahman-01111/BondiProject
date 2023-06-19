@@ -229,7 +229,7 @@ box-sizing: border-box;
 }
 footer li{ padding:5px 0;}
 footer{
-  background-image: url("/imgs/walpy_1686675314214.png");
+  background-image: url("imgs/walpy_1686675314214.png");
   background-color: #111111;
   background-blend-mode:overlay;
   -webkit-background-size: cover;
